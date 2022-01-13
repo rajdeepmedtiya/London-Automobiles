@@ -1,0 +1,125 @@
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+}
+.navbar-brand img{
+  width: 120px;
+}
+.carousel-item{
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.carousel-caption{
+  bottom:190px;
+}
+.carousel-caption h5{
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+.carousel-caption p{
+  width: 75%;
+  margin: auto;
+  font-size: 20px;
+  line-height: 1.9;
+  text-transform: capitalize;
+}
+.navbar{
+  transition: 0.5s ease-in-out;
+  margin-bottom: -20px;
+  height: 110px;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  /*margin-top: 25px;*/
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+  color: #fff;
+}
+.navbar-light .navbar-nav .nav-link{
+  text-decoration: none;
+  display: inline-block;
+  padding-right: 20px;
+}
+.navbar-light .navbar-nav .nav-link:after{
+  content: '';
+  display: block;
+  height: 1px;
+  width: 0;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease; /* .5 seonds for changes to the width and background-color */
+  -webkit-transition: width .5s ease, background-color .5s ease; /* Chrome and Safari */
+  -moz-transition: width .5s ease, background-color .5s ease; /* FireFox */
+}
+.navbar-light .navbar-nav .nav-link:hover:after{
+  width: 100%;
+  background: white;
+}
+@media only screen and (max-width: 768px){
+  .navbar-nav.ml-auto{
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .navbar-toggler{
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.5;
+    background: #fff;
+  }
+}
+#footer{background-color:black;color: white;}
+.footer-info{text-align:justify;}
+li{list-style: none;text-transform: uppercase;}
+a{color: white;}
+.footer-info ul{margin-left:-38px;}
+a:hover{
+  text-decoration: none;
+  color: white;
+}
+.copyright{text-align:center;}
+.footer-links li{display: inline;padding-right:10px;}
+.footer-follow{
+  margin-top: 50px;
+  text-align: justify;
+}
+.btn-get-started {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: 0.5s ease-in-out;
+}
+.btn-get-started:hover {
+  background: #2dc997;
+  border: 1px solid #2dc997;
+}
+p.description{text-align:justify;}
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
